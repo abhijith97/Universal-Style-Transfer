@@ -1,0 +1,2 @@
+# Universal-Style-Transfer
+A Keras implementation of Universal Style Transfer via Feature Transforms by Li et al. The core architecture is an auto-encoder trained to reconstruct from intermediate layers of a pre-trained VGG19 image classification net. Stylization is accomplished by matching the statistics of content/style image features through the Whiten-Color Transform (WCT), which is implemented here using NumPy library. No style images are used for training, and the WCT allows for 'universal' style transfer for arbitrary content/style image pairs.
